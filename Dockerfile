@@ -39,14 +39,14 @@ RUN chmod +x /startScript.sh
 
 
 # 安裝 CodeIgniter 主檔 如果已經有檔案就不用
-RUN cd /var/www/html
-RUN composer create-project codeigniter4/appstarter ./tempfile
-RUN chmod -R 0777 /var/www/html/tempfile/writable
+# RUN cd /var/www/html
+# RUN composer create-project codeigniter4/appstarter ./tempfile
+# RUN chmod -R 0777 /var/www/html/tempfile/writable
 
-RUN mv tempfile/* ./ 
-RUN mv tempfile/.gitignore ./.gitignore
+# RUN mv tempfile/* ./ 
+# RUN mv tempfile/.gitignore ./.gitignore
 
-ADD docker-conf/env /var/www/html/.env
+# ADD docker-conf/env /var/www/html/.env
 
 
 RUN apt-get clean \
