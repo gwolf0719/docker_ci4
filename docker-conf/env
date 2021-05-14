@@ -1,0 +1,7 @@
+CI_ENVIRONMENT = development
+app.baseURL = 'localhost'
+database.default.hostname = "codeigniter4_mysql"
+database.default.database = 'codeigniter4'
+database.default.username = 'codeigniter4'
+database.default.password = 'codeigniter4'
+database.default.DBDriver = 'MySQLi'
